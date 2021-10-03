@@ -1,0 +1,5 @@
+﻿  uic QtCalculator.ui
+  QtCalculator.cpp
+  main.cpp
+  moc_QtCalculator.cpp
+  QtCalculator.vcxproj -> D:\QtProjects\QtCalculator\x64\Debug\QtCalculator.exe

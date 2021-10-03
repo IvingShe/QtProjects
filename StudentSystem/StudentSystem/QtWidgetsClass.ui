@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtWidgetsClass</class>
+ <widget class="QMainWindow" name="QtWidgetsClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生管理系统</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>110</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文行楷&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>欢独院使用学生管理系统</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>学生管理 </string>
+    </property>
+    <addaction name="actionadd_stud"/>
+    <addaction name="separator"/>
+    <addaction name="actiondelet_stud"/>
+    <addaction name="separator"/>
+    <addaction name="actionedit_stud"/>
+    <addaction name="separator"/>
+    <addaction name="actionquery_stud"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionhelp"/>
+    <addaction name="actionabout"/>
+    <addaction name="actionmin"/>
+    <addaction name="actionmax"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionadd_stud">
+   <property name="text">
+    <string>add stud</string>
+   </property>
+  </action>
+  <action name="actiondelet_stud">
+   <property name="text">
+    <string>delet stud</string>
+   </property>
+  </action>
+  <action name="actionedit_stud">
+   <property name="text">
+    <string>edit stud</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>help</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="actionmin">
+   <property name="text">
+    <string>min</string>
+   </property>
+  </action>
+  <action name="actionmax">
+   <property name="text">
+    <string>max</string>
+   </property>
+  </action>
+  <action name="actionquery_stud">
+   <property name="text">
+    <string>query stud</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="MyTimer">
+    </qresource>
+</RCC>

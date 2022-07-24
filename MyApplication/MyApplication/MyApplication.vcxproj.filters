@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{07fd9e29-b4e3-48cd-83cc-0b4551c53e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QLabel">
+      <UniqueIdentifier>{6e46ec7a-f17c-4ab1-b6a7-71897c30f295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QTabWidget">
+      <UniqueIdentifier>{da743812-2df2-4592-bf05-0fd7f292fe48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QTabWidget2">
+      <UniqueIdentifier>{e4b3519f-e335-416d-9644-70a3a048b118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QStackedWidget">
+      <UniqueIdentifier>{5018d484-01cd-48ba-ab86-928d2c229b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QListWidget">
+      <UniqueIdentifier>{5b9efdfc-95e1-41e3-af8f-0ee7efde3d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QListWidgetByModelViewArchitecture">
+      <UniqueIdentifier>{0343d3b7-804e-494a-87a9-1a09587b3c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QListWidgetByModelVIewArchitecturViaDelegate">
+      <UniqueIdentifier>{97b0117d-50bd-44d2-93f7-2ea4f638ff91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyCircle">
+      <UniqueIdentifier>{f8647085-7dcc-436d-8bee-fb3809efcbb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UsingMyCircleInQtDesigner">
+      <UniqueIdentifier>{e1042222-9302-49c7-9a85-3ca1f2116665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidget">
+      <UniqueIdentifier>{216004ba-c0bb-4082-80e2-da27cb99f4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QComboBox">
+      <UniqueIdentifier>{64b49cf4-c9f6-4c97-b375-c0550a8f2859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidget3">
+      <UniqueIdentifier>{1be7259b-c0d7-400a-9a29-65e203ec6572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidget4">
+      <UniqueIdentifier>{eb38fcf8-ec81-469d-8e6c-28d85d8c3774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidget2">
+      <UniqueIdentifier>{b075004d-2310-4ead-8194-bdcb68825352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidgetWithMouse">
+      <UniqueIdentifier>{6aaadea0-e672-46f9-9239-22fe032725ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidgetWithMouse\simpleBymouse">
+      <UniqueIdentifier>{a6aad61f-6239-4808-852b-0982c9054fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustmizedWidget5">
+      <UniqueIdentifier>{98535f51-f29e-4be0-aba7-deec79feb255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ComplexCustomWidget">
+      <UniqueIdentifier>{31167f14-491d-4e86-8c54-3aca14f281e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QMyFirstWidget">
+      <UniqueIdentifier>{070c3cf3-9802-43c5-aa3b-23a62f15e146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QMyFirstLayout">
+      <UniqueIdentifier>{970c1b7f-1004-47ac-ac92-6aec418c6475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QListWidgetWithContextMenu">
+      <UniqueIdentifier>{c526e01f-391c-46e0-b925-7e9730a5d0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyQTreeWidget">
+      <UniqueIdentifier>{9e03157b-f894-4740-b190-6c1b184d0d5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyTableWidget">
+      <UniqueIdentifier>{e003a9fd-f0e3-455a-b826-9283c23dafca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threads">
+      <UniqueIdentifier>{8b6e9e8d-ae56-4673-8f7d-6f972e09819b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Charset">
+      <UniqueIdentifier>{63816f6d-f71e-4e76-8ea8-af7eab6c6c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OObjectTreeTest">
+      <UniqueIdentifier>{84717096-d13d-42e2-9adf-0857f7908129}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MyApplication.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="MyApplication.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="MyApplication.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="MyApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtMainWidget.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQLabel.cpp">
+      <Filter>QLabel</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQtTabWidget.cpp">
+      <Filter>QTabWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQtTabWidget2.cpp">
+      <Filter>QTabWidget2</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQStackedWidget.cpp">
+      <Filter>QStackedWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQtStackedWidgetPage.cpp">
+      <Filter>QStackedWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQListWidget.cpp">
+      <Filter>QListWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQListWidgetByModelView.cpp">
+      <Filter>QListWidgetByModelViewArchitecture</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQListWidgetMVViaDelegate.cpp">
+      <Filter>QListWidgetByModelVIewArchitecturViaDelegate</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCircle.cpp">
+      <Filter>MyCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingMyCircleInQtDesigner.cpp">
+      <Filter>UsingMyCircleInQtDesigner</Filter>
+    </ClCompile>
+    <ClCompile Include="MyItemDrawer.cpp">
+      <Filter>QListWidgetByModelVIewArchitecturViaDelegate</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWidgetWithQPenAndQBrush.cpp">
+      <Filter>CustmizedWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQWidgetWithSimpleAnimation.cpp">
+      <Filter>CustmizedWidget2</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQCombobox.cpp">
+      <Filter>QComboBox</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQtDrawTextWidget.cpp">
+      <Filter>CustmizedWidget3</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDrawingPictureWidget.cpp">
+      <Filter>CustmizedWidget4</Filter>
+    </ClCompile>
+    <ClCompile Include="QtWidgetsWithMouse.cpp">
+      <Filter>CustmizedWidgetWithMouse\simpleBymouse</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEditListWidget.cpp">
+      <Filter>CustmizedWidget5</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexCustomWidget.cpp">
+      <Filter>ComplexCustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFirstCustomWidget.cpp">
+      <Filter>QMyFirstWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="QVLayoutDemoWidget.cpp">
+      <Filter>QMyFirstLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListWidgetWithContextMenu.cpp">
+      <Filter>QListWidgetWithContextMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTreeWidget.cpp">
+      <Filter>MyQTreeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTableWidget.cpp">
+      <Filter>MyTableWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQTreeWidgetWithCustomItem.cpp">
+      <Filter>MyTableWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="MyQTreeWidgetWithCustomItem2.cpp">
+      <Filter>MyTableWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="QCellWidget.cpp">
+      <Filter>MyTableWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Threads\MyTimer.cpp">
+      <Filter>Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="CharsetDemoWidget.cpp">
+      <Filter>Charset</Filter>
+    </ClCompile>
+    <ClCompile Include="GBK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParentObject.cpp">
+      <Filter>OObjectTreeTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildObjectWithParentCotext.cpp">
+      <Filter>OObjectTreeTest</Filter>
+    </ClCompile>
+    <ClCompile Include="QObjectTreeTestWidget.cpp">
+      <Filter>OObjectTreeTest</Filter>
+    </ClCompile>
+    <ClCompile Include="QChildObjectWithoutParent.cpp">
+      <Filter>OObjectTreeTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QtMainWidget.h">
+      <Filter>Main</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQLabel.h">
+      <Filter>QLabel</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQtTabWidget.h">
+      <Filter>QTabWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQtTabWidget2.h">
+      <Filter>QTabWidget2</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQStackedWidget.h">
+      <Filter>QStackedWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQtStackedWidgetPage.h">
+      <Filter>QStackedWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQListWidget.h">
+      <Filter>QListWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQListWidgetByModelView.h">
+      <Filter>QListWidgetByModelViewArchitecture</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQListWidgetMVViaDelegate.h">
+      <Filter>QListWidgetByModelVIewArchitecturViaDelegate</Filter>
+    </QtMoc>
+    <QtMoc Include="MyCircle.h">
+      <Filter>MyCircle</Filter>
+    </QtMoc>
+    <QtMoc Include="UsingMyCircleInQtDesigner.h">
+      <Filter>UsingMyCircleInQtDesigner</Filter>
+    </QtMoc>
+    <QtMoc Include="MyItemDrawer.h">
+      <Filter>QListWidgetByModelVIewArchitecturViaDelegate</Filter>
+    </QtMoc>
+    <QtMoc Include="MyWidgetWithQPenAndQBrush.h">
+      <Filter>CustmizedWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQWidgetWithSimpleAnimation.h">
+      <Filter>CustmizedWidget2</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQCombobox.h">
+      <Filter>QComboBox</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQtDrawTextWidget.h">
+      <Filter>CustmizedWidget3</Filter>
+    </QtMoc>
+    <QtMoc Include="MyDrawingPictureWidget.h">
+      <Filter>CustmizedWidget4</Filter>
+    </QtMoc>
+    <QtMoc Include="QtWidgetsWithMouse.h">
+      <Filter>CustmizedWidgetWithMouse\simpleBymouse</Filter>
+    </QtMoc>
+    <QtMoc Include="MyEditListWidget.h">
+      <Filter>CustmizedWidget5</Filter>
+    </QtMoc>
+    <QtMoc Include="ComplexCustomWidget.h">
+      <Filter>ComplexCustomWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyFirstCustomWidget.h">
+      <Filter>QMyFirstWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="QVLayoutDemoWidget.h">
+      <Filter>QMyFirstLayout</Filter>
+    </QtMoc>
+    <QtMoc Include="MyListWidgetWithContextMenu.h">
+      <Filter>QListWidgetWithContextMenu</Filter>
+    </QtMoc>
+    <QtMoc Include="MyTreeWidget.h">
+      <Filter>MyQTreeWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyTableWidget.h">
+      <Filter>MyTableWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQTreeWidgetWithCustomItem.h">
+      <Filter>MyTableWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="MyQTreeWidgetWithCustomItem2.h">
+      <Filter>MyTableWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="QCellWidget.h">
+      <Filter>MyTableWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="Threads\MyTimer.h">
+      <Filter>Threads</Filter>
+    </QtMoc>
+    <QtMoc Include="CharsetDemoWidget.h">
+      <Filter>Charset</Filter>
+    </QtMoc>
+    <QtMoc Include="GBK.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ParentObject.h">
+      <Filter>OObjectTreeTest</Filter>
+    </QtMoc>
+    <QtMoc Include="ChildObjectWithParentCotext.h">
+      <Filter>OObjectTreeTest</Filter>
+    </QtMoc>
+    <QtMoc Include="QObjectTreeTestWidget.h">
+      <Filter>OObjectTreeTest</Filter>
+    </QtMoc>
+    <QtMoc Include="QChildObjectWithoutParent.h">
+      <Filter>OObjectTreeTest</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtMainWidget.ui">
+      <Filter>Main</Filter>
+    </QtUic>
+    <QtUic Include="MyQLabel.ui">
+      <Filter>QLabel</Filter>
+    </QtUic>
+    <QtUic Include="MyQtTabWidget.ui">
+      <Filter>QTabWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQtTabWidget2.ui">
+      <Filter>QTabWidget2</Filter>
+    </QtUic>
+    <QtUic Include="MyQStackedWidget.ui">
+      <Filter>QStackedWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQtStackedWidgetPage.ui">
+      <Filter>QStackedWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQListWidget.ui">
+      <Filter>QListWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQListWidgetByModelView.ui">
+      <Filter>QListWidgetByModelViewArchitecture</Filter>
+    </QtUic>
+    <QtUic Include="MyQListWidgetMVViaDelegate.ui">
+      <Filter>QListWidgetByModelVIewArchitecturViaDelegate</Filter>
+    </QtUic>
+    <QtUic Include="UsingMyCircleInQtDesigner.ui">
+      <Filter>UsingMyCircleInQtDesigner</Filter>
+    </QtUic>
+    <QtUic Include="MyWidgetWithQPenAndQBrush.ui">
+      <Filter>CustmizedWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQWidgetWithSimpleAnimation.ui">
+      <Filter>CustmizedWidget2</Filter>
+    </QtUic>
+    <QtUic Include="MyQCombobox.ui">
+      <Filter>QComboBox</Filter>
+    </QtUic>
+    <QtUic Include="MyQtDrawTextWidget.ui">
+      <Filter>CustmizedWidget3</Filter>
+    </QtUic>
+    <QtUic Include="MyDrawingPictureWidget.ui">
+      <Filter>CustmizedWidget4</Filter>
+    </QtUic>
+    <QtUic Include="QtWidgetsWithMouse.ui">
+      <Filter>CustmizedWidgetWithMouse\simpleBymouse</Filter>
+    </QtUic>
+    <QtUic Include="MyEditListWidget.ui">
+      <Filter>CustmizedWidget5</Filter>
+    </QtUic>
+    <QtUic Include="ComplexCustomWidget.ui">
+      <Filter>ComplexCustomWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyFirstCustomWidget.ui">
+      <Filter>QMyFirstWidget</Filter>
+    </QtUic>
+    <QtUic Include="QVLayoutDemoWidget.ui">
+      <Filter>QMyFirstLayout</Filter>
+    </QtUic>
+    <QtUic Include="MyListWidgetWithContextMenu.ui">
+      <Filter>QListWidgetWithContextMenu</Filter>
+    </QtUic>
+    <QtUic Include="MyTreeWidget.ui">
+      <Filter>MyQTreeWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyTableWidget.ui">
+      <Filter>MyTableWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQTreeWidgetWithCustomItem.ui">
+      <Filter>MyTableWidget</Filter>
+    </QtUic>
+    <QtUic Include="MyQTreeWidgetWithCustomItem2.ui">
+      <Filter>MyTableWidget</Filter>
+    </QtUic>
+    <QtUic Include="QCellWidget.ui">
+      <Filter>MyTableWidget</Filter>
+    </QtUic>
+    <QtUic Include="Threads\MyTimer.ui">
+      <Filter>Threads</Filter>
+    </QtUic>
+    <QtUic Include="CharsetDemoWidget.ui">
+      <Filter>Charset</Filter>
+    </QtUic>
+    <QtUic Include="GBK.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QObjectTreeTestWidget.ui">
+      <Filter>OObjectTreeTest</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyNameSpace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

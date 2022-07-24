@@ -1,4 +1,11 @@
 <RCC>
-    <qresource prefix="HittingMouse">
+    <qresource prefix="/HittingMouse"/>
+    <qresource prefix="/icon"/>
+    <qresource prefix="/bg">
+        <file>pics/grass.jpg</file>
+        <file>pics/mountains.jpg</file>
+        <file>pics/mouse.jpg</file>
+        <file>pics/valley.jpg</file>
+        <file>pics/flower.jpg</file>
     </qresource>
 </RCC>

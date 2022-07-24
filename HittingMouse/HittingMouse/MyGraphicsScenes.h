@@ -2,6 +2,8 @@
 
 #include <QObject>
 #include <QGraphicsScene>
+#include <QGraphicsItem>
+#include "MyGraphicsPixmapItem.h"
 
 class MyGraphicsScenes : public QGraphicsScene
 {
@@ -10,4 +12,7 @@ class MyGraphicsScenes : public QGraphicsScene
 public:
 	MyGraphicsScenes(QObject *parent);
 	~MyGraphicsScenes();
+
+private:
+	MyGraphicsPixmapItem *pItem;
 };

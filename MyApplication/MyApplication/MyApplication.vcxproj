@@ -103,6 +103,7 @@
     <ClCompile Include="ChildObjectWithParentCotext.cpp" />
     <ClCompile Include="ComplexCustomWidget.cpp" />
     <ClCompile Include="GBK.cpp" />
+    <ClCompile Include="LoginDialog.cpp" />
     <ClCompile Include="MyCircle.cpp" />
     <ClCompile Include="MyDrawingPictureWidget.cpp" />
     <ClCompile Include="MyEditListWidget.cpp" />
@@ -125,19 +126,23 @@
     <ClCompile Include="MyTableWidget.cpp" />
     <ClCompile Include="MyTreeWidget.cpp" />
     <ClCompile Include="MyWidgetWithQPenAndQBrush.cpp" />
+    <ClCompile Include="NonModalWindowDemo.cpp" />
     <ClCompile Include="ParentObject.cpp" />
     <ClCompile Include="QCellWidget.cpp" />
     <ClCompile Include="QChildObjectWithoutParent.cpp" />
+    <ClCompile Include="QFileDialogDemoWidget.cpp" />
     <ClCompile Include="QObjectTreeTestWidget.cpp" />
     <ClCompile Include="QtMainWidget.cpp" />
     <ClCompile Include="QtWidgetsWithMouse.cpp" />
     <ClCompile Include="QVLayoutDemoWidget.cpp" />
+    <ClCompile Include="SearchWindow.cpp" />
     <ClCompile Include="Threads\MyTimer.cpp" />
     <ClCompile Include="UsingMyCircleInQtDesigner.cpp" />
     <QtRcc Include="MyApplication.qrc" />
     <QtUic Include="CharsetDemoWidget.ui" />
     <QtUic Include="ComplexCustomWidget.ui" />
     <QtUic Include="GBK.ui" />
+    <QtUic Include="LoginDialog.ui" />
     <QtUic Include="MyApplication.ui" />
     <QtMoc Include="MyApplication.h" />
     <ClCompile Include="MyApplication.cpp" />
@@ -162,11 +167,14 @@
     <QtUic Include="MyTableWidget.ui" />
     <QtUic Include="MyTreeWidget.ui" />
     <QtUic Include="MyWidgetWithQPenAndQBrush.ui" />
+    <QtUic Include="NonModalWindowDemo.ui" />
     <QtUic Include="QCellWidget.ui" />
+    <QtUic Include="QFileDialogDemoWidget.ui" />
     <QtUic Include="QObjectTreeTestWidget.ui" />
     <QtUic Include="QtMainWidget.ui" />
     <QtUic Include="QtWidgetsWithMouse.ui" />
     <QtUic Include="QVLayoutDemoWidget.ui" />
+    <QtUic Include="SearchWindow.ui" />
     <QtUic Include="Threads\MyTimer.ui" />
     <QtUic Include="UsingMyCircleInQtDesigner.ui" />
   </ItemGroup>
@@ -258,12 +266,16 @@
     <QtMoc Include="Threads\MyTimer.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="SearchWindow.h" />
+    <QtMoc Include="NonModalWindowDemo.h" />
+    <QtMoc Include="QFileDialogDemoWidget.h" />
     <QtMoc Include="QChildObjectWithoutParent.h" />
     <QtMoc Include="QObjectTreeTestWidget.h" />
     <QtMoc Include="ParentObject.h" />
     <QtMoc Include="CharsetDemoWidget.h" />
     <QtMoc Include="GBK.h" />
     <QtMoc Include="ChildObjectWithParentCotext.h" />
+    <QtMoc Include="LoginDialog.h" />
     <ClInclude Include="MyNameSpace.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

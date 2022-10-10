@@ -107,6 +107,9 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	addQListWidgetItem(u8"工作线程实例（子模块MyFirstModule中）", 16);
 	addQListWidgetItem(u8"Shared Library 调用（子模块MyDLLModule中）", 17);
 	addQListWidgetItem(u8"QObject对象树parent自析造演示", 18);
+	addQListWidgetItem(u8"Modal 和Non-Modal 对话框", 19);
+	addQListWidgetItem(u8"QFileDialog示例程序", 20);
+	addQListWidgetItem(u8"Non-Modal窗口演示", 21);
 	connect(ui.listWidget, SIGNAL(itemClicked(QListWidgetItem *)), this, SLOT(onSlotItemClick(QListWidgetItem *)));
 }
 
@@ -166,6 +169,7 @@ void QtMainWidget::onSlotQComboBox() {
 
 void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
 {
+	int resultCode = -1;
 	int role = item->data(Qt::UserRole).toInt();
 	switch (role)
 	{
@@ -246,7 +250,34 @@ void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
 		pQObjectTreeTestWidget = new QObjectTreeTestWidget(this);	
 		pQObjectTreeTestWidget->show();	
 		break;
+	case 19:
+		
+		mpLoginDialog = new LoginDialog(this);
+	    //mpLoginDialog->show();//非模态Non-modal;
 
+			
+		resultCode =mpLoginDialog->exec();//modal dialog,程序阻塞；
+
+		if (resultCode==QDialog::Accepted) 
+		{//用户点击登录，取得用户的输入；
+			qDebug() << "QDialog::Accepted";
+			qDebug() << "UserName=" << mpLoginDialog->mUserName << ",mPassword=" << mpLoginDialog->mPassword;
+		}
+		else if (resultCode == QDialog::Rejected)
+		{
+			qDebug() << "QDialog::Rejected";
+		}
+		break;
+
+	case 20:
+		mpFileDialogDemoWidget = new QFileDialogDemoWidget(this);
+		mpFileDialogDemoWidget->show();
+		break;
+
+	case 21:
+		mpNonModalWindowDemo = new NonModalWindowDemo(this);
+		mpNonModalWindowDemo->show();
+		break;
 	default:
 		break;
 	}

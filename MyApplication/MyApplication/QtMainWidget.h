@@ -31,6 +31,9 @@
 #include "Threads/MyTimer.h"
 #include "CharsetDemoWidget.h"
 
+#include "LoginDialog.h"
+#include "QFileDialogDemoWidget.h"
+#include "NonModalWindowDemo.h"
 /*
 * 子模块中定义的类文件
 */
@@ -105,4 +108,8 @@ private:
 
 
 	QObjectTreeTestWidget *pQObjectTreeTestWidget=Q_NULLPTR;
+
+	LoginDialog* mpLoginDialog = nullptr;
+	QFileDialogDemoWidget* mpFileDialogDemoWidget = nullptr;
+	NonModalWindowDemo* mpNonModalWindowDemo = nullptr;
 };

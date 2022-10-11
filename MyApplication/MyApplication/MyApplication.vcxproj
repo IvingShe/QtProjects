@@ -110,6 +110,7 @@
     <ClCompile Include="MyFirstCustomWidget.cpp" />
     <ClCompile Include="MyItemDrawer.cpp" />
     <ClCompile Include="MyListWidgetWithContextMenu.cpp" />
+    <ClCompile Include="MyMainWindowDemo.cpp" />
     <ClCompile Include="MyQCombobox.cpp" />
     <ClCompile Include="MyQLabel.cpp" />
     <ClCompile Include="MyQListWidget.cpp" />
@@ -151,6 +152,7 @@
     <QtUic Include="MyEditListWidget.ui" />
     <QtUic Include="MyFirstCustomWidget.ui" />
     <QtUic Include="MyListWidgetWithContextMenu.ui" />
+    <QtUic Include="MyMainWindowDemo.ui" />
     <QtUic Include="MyQCombobox.ui" />
     <QtUic Include="MyQLabel.ui" />
     <QtUic Include="MyQListWidget.ui" />
@@ -276,6 +278,7 @@
     <QtMoc Include="GBK.h" />
     <QtMoc Include="ChildObjectWithParentCotext.h" />
     <QtMoc Include="LoginDialog.h" />
+    <QtMoc Include="MyMainWindowDemo.h" />
     <ClInclude Include="MyNameSpace.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

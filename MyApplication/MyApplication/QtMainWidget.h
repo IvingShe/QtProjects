@@ -34,6 +34,8 @@
 #include "LoginDialog.h"
 #include "QFileDialogDemoWidget.h"
 #include "NonModalWindowDemo.h"
+#include "MyMainWindowDemo.h"
+
 /*
 * 子模块中定义的类文件
 */
@@ -112,4 +114,6 @@ private:
 	LoginDialog* mpLoginDialog = nullptr;
 	QFileDialogDemoWidget* mpFileDialogDemoWidget = nullptr;
 	NonModalWindowDemo* mpNonModalWindowDemo = nullptr;
+
+	MyMainWindowDemo* mpMyMainWindowDemo = Q_NULLPTR;
 };

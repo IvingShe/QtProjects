@@ -8,6 +8,12 @@
     <file>image/camera.png</file>
     <file>image/settings.png</file>
     <file>image/help.png</file>
+    <file>image/icon_help.png</file>
+    <file>image/icon_settings.png</file>
+    <file>image/new_file.png</file>
+    <file>image/open_file.png</file>
+    <file>image/sava_file.png</file>
     <file>image/mascot.jpg</file>
   </qresource>
+  <qresource/>
 </RCC>

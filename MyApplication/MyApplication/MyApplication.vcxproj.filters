@@ -105,6 +105,9 @@
     <Filter Include="ModalAndNonModalDialog">
       <UniqueIdentifier>{bd95f433-dd5a-48c2-a3d4-bce1a0a8dc8a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MainWindowDemo">
+      <UniqueIdentifier>{d291c374-9cf4-4fd9-acdd-a6bc5a19258a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyApplication.qrc">
@@ -241,6 +244,9 @@
     <ClCompile Include="SearchWindow.cpp">
       <Filter>ModalAndNonModalDialog</Filter>
     </ClCompile>
+    <ClCompile Include="MyMainWindowDemo.cpp">
+      <Filter>MainWindowDemo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtMainWidget.h">
@@ -360,6 +366,9 @@
     <QtMoc Include="SearchWindow.h">
       <Filter>ModalAndNonModalDialog</Filter>
     </QtMoc>
+    <QtMoc Include="MyMainWindowDemo.h">
+      <Filter>MainWindowDemo</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="QtMainWidget.ui">
@@ -463,6 +472,9 @@
     </QtUic>
     <QtUic Include="SearchWindow.ui">
       <Filter>ModalAndNonModalDialog</Filter>
+    </QtUic>
+    <QtUic Include="MyMainWindowDemo.ui">
+      <Filter>MainWindowDemo</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>

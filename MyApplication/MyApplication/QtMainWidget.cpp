@@ -110,9 +110,130 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	addQListWidgetItem(u8"Modal 和Non-Modal 对话框", 19);
 	addQListWidgetItem(u8"QFileDialog示例程序", 20);
 	addQListWidgetItem(u8"Non-Modal窗口演示", 21);
+	addQListWidgetItem(u8"MainWindow展示类", 22);
 	connect(ui.listWidget, SIGNAL(itemClicked(QListWidgetItem *)), this, SLOT(onSlotItemClick(QListWidgetItem *)));
 }
 
+void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
+{
+	int resultCode = -1;
+	int role = item->data(Qt::UserRole).toInt();
+	switch (role)
+	{
+	case 1:
+		mMyCircle = new MyCircle(NULL);
+		mMyCircle->show();
+		break;
+	case 2:
+		mUsingMyCircleInQtDesigner = new UsingMyCircleInQtDesigner(NULL);
+		mUsingMyCircleInQtDesigner->show();
+		break;
+	case 3:
+		mMyWidgetWithQPenAndQBrush = new MyWidgetWithQPenAndQBrush(NULL);
+		mMyWidgetWithQPenAndQBrush->show();
+		break;
+	case 4:
+		mMyQWidgetWithSimpleAnimation = new MyQWidgetWithSimpleAnimation(NULL);
+		mMyQWidgetWithSimpleAnimation->show();
+		break;
+	case 5:
+		mMyQtDrawTextWidget = new MyQtDrawTextWidget(NULL);
+		mMyQtDrawTextWidget->show();
+		break;
+	case 6:
+		mMyDrawingPictureWidget = new MyDrawingPictureWidget(NULL);
+		mMyDrawingPictureWidget->show();
+		break;
+	case 7:
+		mQtWidgetsWithMouse = new QtWidgetsWithMouse(NULL);
+		mQtWidgetsWithMouse->show();
+		break;
+
+	case 8:
+		mMyEditListWidget = new MyEditListWidget(NULL);
+		mMyEditListWidget->show();
+		break;
+	case 9:
+		mMyListWidgetWithContextMenu = new MyListWidgetWithContextMenu(NULL);
+		mMyListWidgetWithContextMenu->show();
+		break;
+	case 10:
+		mMyTreeWidget = new 	MyTreeWidget(NULL);
+		mMyTreeWidget->show();
+		break;
+	case 11:
+		mMyTableWidget = new 	MyTableWidget(NULL);
+		mMyTableWidget->show();
+		break;
+	case 12:
+		mMyQTreeWidgetWithCustomItem = new MyQTreeWidgetWithCustomItem(NULL);
+		mMyQTreeWidgetWithCustomItem->show();
+		break;
+	case 13:
+		mMyQTreeWidgetWithCustomItem2 = new MyQTreeWidgetWithCustomItem2(NULL);
+		mMyQTreeWidgetWithCustomItem2->show();
+		break;
+	case 14:
+		mMyTimer = new MyTimer(NULL);
+		mMyTimer->show();
+		break;
+	case 15:
+		mCharsetDemoWidget = new CharsetDemoWidget();
+		mCharsetDemoWidget->show();
+		break;
+		//QListWidget QTreeWidget QTableWidget
+		//QListWigdetItem QTreeWidgetItem  QTableWidgetItem;
+
+	case 16:
+		mpFileSenderWidget = new FileSenderWidget();
+		mpFileSenderWidget->show();
+		break;
+	case 17:
+		mpFirstDll = new  DLLFirstDemoClass();
+		mpFirstDll->printLog();
+		break;
+
+	case 18:
+		pQObjectTreeTestWidget = new QObjectTreeTestWidget(this);
+		pQObjectTreeTestWidget->show();
+		break;
+	case 19:
+
+		mpLoginDialog = new LoginDialog(this);
+		//mpLoginDialog->show();//非模态Non-modal;
+
+
+		resultCode = mpLoginDialog->exec();//modal dialog,程序阻塞；
+
+		if (resultCode == QDialog::Accepted)
+		{//用户点击登录，取得用户的输入；
+			qDebug() << "QDialog::Accepted";
+			qDebug() << "UserName=" << mpLoginDialog->mUserName << ",mPassword=" << mpLoginDialog->mPassword;
+		}
+		else if (resultCode == QDialog::Rejected)
+		{
+			qDebug() << "QDialog::Rejected";
+		}
+		break;
+
+	case 20:
+		mpFileDialogDemoWidget = new QFileDialogDemoWidget(this);
+		mpFileDialogDemoWidget->show();
+		break;
+
+	case 21:
+		mpNonModalWindowDemo = new NonModalWindowDemo(this);
+		mpNonModalWindowDemo->show();
+		break;
+
+	case 22:
+		mpMyMainWindowDemo = new MyMainWindowDemo(Q_NULLPTR);
+		mpMyMainWindowDemo->show();
+
+	default:
+		break;
+	}
+}
 void QtMainWidget::addQListWidgetItem(const QString text, int role)
 {
 	QListWidgetItem* item = new QListWidgetItem();
@@ -167,121 +288,7 @@ void QtMainWidget::onSlotQComboBox() {
 	mMyQCombobox->show();
 }
 
-void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
-{
-	int resultCode = -1;
-	int role = item->data(Qt::UserRole).toInt();
-	switch (role)
-	{
-	case 1:
-		mMyCircle = new MyCircle(NULL);
-		mMyCircle->show();
-		break;
-	case 2:
-		mUsingMyCircleInQtDesigner = new UsingMyCircleInQtDesigner(NULL);
-		mUsingMyCircleInQtDesigner->show();
-		break;
-	case 3:
-		mMyWidgetWithQPenAndQBrush = new MyWidgetWithQPenAndQBrush(NULL);
-		mMyWidgetWithQPenAndQBrush->show();
-		break;		
-	case 4:
-		mMyQWidgetWithSimpleAnimation = new MyQWidgetWithSimpleAnimation(NULL);
-		mMyQWidgetWithSimpleAnimation->show();
-		break;
-	case 5:
-		mMyQtDrawTextWidget = new MyQtDrawTextWidget(NULL);
-		mMyQtDrawTextWidget->show();
-		break;
-	case 6:
-		mMyDrawingPictureWidget = new MyDrawingPictureWidget(NULL);
-		mMyDrawingPictureWidget->show();
-		break;
-	case 7:		
-		mQtWidgetsWithMouse = new QtWidgetsWithMouse(NULL);
-		mQtWidgetsWithMouse->show();
-		break;
 
-	case 8:
-		mMyEditListWidget = new MyEditListWidget(NULL);
-		mMyEditListWidget->show();
-		break;
-	case 9:
-		mMyListWidgetWithContextMenu = new MyListWidgetWithContextMenu(NULL);
-		mMyListWidgetWithContextMenu->show();
-		break;
-	case 10:
-		mMyTreeWidget = new 	MyTreeWidget(NULL);
-		mMyTreeWidget->show();
-		break;
-	case 11:
-		mMyTableWidget = new 	MyTableWidget(NULL);
-		mMyTableWidget->show();
-		break;
-	case 12:
-		mMyQTreeWidgetWithCustomItem =new MyQTreeWidgetWithCustomItem(NULL);
-		mMyQTreeWidgetWithCustomItem->show();
-		break;
-	case 13:
-		mMyQTreeWidgetWithCustomItem2 = new MyQTreeWidgetWithCustomItem2(NULL);
-		mMyQTreeWidgetWithCustomItem2->show();
-		break;
-	case 14:		
-		mMyTimer = new MyTimer(NULL);
-		mMyTimer->show();
-		break;
-	case 15:
-		mCharsetDemoWidget = new CharsetDemoWidget();
-		mCharsetDemoWidget->show();
-		break;
-		//QListWidget QTreeWidget QTableWidget
-        //QListWigdetItem QTreeWidgetItem  QTableWidgetItem;
-
-	case 16:		
-		mpFileSenderWidget = new FileSenderWidget();
-		mpFileSenderWidget->show();
-		break;
-	case 17:
-		mpFirstDll = new  DLLFirstDemoClass();
-		mpFirstDll->printLog();
-		break;
-
-	case 18:
-		pQObjectTreeTestWidget = new QObjectTreeTestWidget(this);	
-		pQObjectTreeTestWidget->show();	
-		break;
-	case 19:
-		
-		mpLoginDialog = new LoginDialog(this);
-	    //mpLoginDialog->show();//非模态Non-modal;
-
-			
-		resultCode =mpLoginDialog->exec();//modal dialog,程序阻塞；
-
-		if (resultCode==QDialog::Accepted) 
-		{//用户点击登录，取得用户的输入；
-			qDebug() << "QDialog::Accepted";
-			qDebug() << "UserName=" << mpLoginDialog->mUserName << ",mPassword=" << mpLoginDialog->mPassword;
-		}
-		else if (resultCode == QDialog::Rejected)
-		{
-			qDebug() << "QDialog::Rejected";
-		}
-		break;
-
-	case 20:
-		mpFileDialogDemoWidget = new QFileDialogDemoWidget(this);
-		mpFileDialogDemoWidget->show();
-		break;
-
-	case 21:
-		mpNonModalWindowDemo = new NonModalWindowDemo(this);
-		mpNonModalWindowDemo->show();
-		break;
-	default:
-		break;
-	}
-}
 
 void QtMainWidget::onSlotQListWidget() 
 {

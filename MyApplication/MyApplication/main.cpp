@@ -7,6 +7,7 @@
 #include "QVLayoutDemoWidget.h"
 #include "ComplexCustomWidget.h"
 #include "QtMainWidget.h"
+#include "QtApplicationDemo.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 	int size2 = sizeof(ac);
 	char str[] = "1αaβ8";
 	int size3 = sizeof(str);
-    QApplication a(argc, argv);
+	QtApplicationDemo a(argc, argv);
 	/**设置全局模式*/
 	QString style = "QPushButton{background:yellow;}   QPushButton, QLineEdit{color:blue;}";
 	a.setStyleSheet(style);

@@ -108,6 +108,9 @@
     <Filter Include="MainWindowDemo">
       <UniqueIdentifier>{d291c374-9cf4-4fd9-acdd-a6bc5a19258a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{025d15c4-ce35-4005-a143-b0b5a5ee0515}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyApplication.qrc">
@@ -247,6 +250,9 @@
     <ClCompile Include="MyMainWindowDemo.cpp">
       <Filter>MainWindowDemo</Filter>
     </ClCompile>
+    <ClCompile Include="QtApplicationDemo.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtMainWidget.h">
@@ -368,6 +374,9 @@
     </QtMoc>
     <QtMoc Include="MyMainWindowDemo.h">
       <Filter>MainWindowDemo</Filter>
+    </QtMoc>
+    <QtMoc Include="QtApplicationDemo.h">
+      <Filter>App</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>

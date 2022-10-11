@@ -133,6 +133,7 @@
     <ClCompile Include="QChildObjectWithoutParent.cpp" />
     <ClCompile Include="QFileDialogDemoWidget.cpp" />
     <ClCompile Include="QObjectTreeTestWidget.cpp" />
+    <ClCompile Include="QtApplicationDemo.cpp" />
     <ClCompile Include="QtMainWidget.cpp" />
     <ClCompile Include="QtWidgetsWithMouse.cpp" />
     <ClCompile Include="QVLayoutDemoWidget.cpp" />
@@ -268,6 +269,7 @@
     <QtMoc Include="Threads\MyTimer.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="QtApplicationDemo.h" />
     <QtMoc Include="SearchWindow.h" />
     <QtMoc Include="NonModalWindowDemo.h" />
     <QtMoc Include="QFileDialogDemoWidget.h" />

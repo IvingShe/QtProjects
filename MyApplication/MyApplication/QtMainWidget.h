@@ -35,7 +35,7 @@
 #include "QFileDialogDemoWidget.h"
 #include "NonModalWindowDemo.h"
 #include "MyMainWindowDemo.h"
-
+#include "NotePadMainWindow.h"
 /*
 * 子模块中定义的类文件
 */
@@ -116,4 +116,5 @@ private:
 	NonModalWindowDemo* mpNonModalWindowDemo = nullptr;
 
 	MyMainWindowDemo* mpMyMainWindowDemo = Q_NULLPTR;
+	NotePadMainWindow* mpNotePadMainWindow = Q_NULLPTR;
 };

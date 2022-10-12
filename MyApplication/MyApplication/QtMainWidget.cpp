@@ -112,6 +112,7 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	addQListWidgetItem(u8"Non-Modal窗口演示", 21);
 	addQListWidgetItem(u8"MainWindow展示类", 22);
 	addQListWidgetItem(u8"NotePad小演示程序：使用MainWindow创建", 23);
+	addQListWidgetItem(u8"可停靠窗口演示：QDockWidget", 24);
 
 	connect(ui.listWidget, SIGNAL(itemClicked(QListWidgetItem *)), this, SLOT(onSlotItemClick(QListWidgetItem *)));
 }
@@ -237,8 +238,16 @@ void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
 		mpNotePadMainWindow->show();
 		break;
 	case 24:
+		myQDockWidgetDemo = new QDockWidgetDemo(Q_NULLPTR);
+		myQDockWidgetDemo->show();
 		break;
 	case 25:
+
+		break;
+	case 26:
+
+		break;
+	case 27:
 		break;
 	default:
 		break;

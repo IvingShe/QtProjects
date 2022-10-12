@@ -114,6 +114,9 @@
     <Filter Include="NotePadApp">
       <UniqueIdentifier>{de3e795a-d582-4089-ae4a-d5b545732282}</UniqueIdentifier>
     </Filter>
+    <Filter Include="QDockWidget">
+      <UniqueIdentifier>{e9df640c-d4f4-4deb-8207-d82ada9692b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyApplication.qrc">
@@ -259,6 +262,9 @@
     <ClCompile Include="NotePadMainWindow.cpp">
       <Filter>NotePadApp</Filter>
     </ClCompile>
+    <ClCompile Include="QDockWidgetDemo.cpp">
+      <Filter>QDockWidget</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtMainWidget.h">
@@ -387,6 +393,9 @@
     <QtMoc Include="NotePadMainWindow.h">
       <Filter>NotePadApp</Filter>
     </QtMoc>
+    <QtMoc Include="QDockWidgetDemo.h">
+      <Filter>QDockWidget</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="QtMainWidget.ui">
@@ -496,6 +505,9 @@
     </QtUic>
     <QtUic Include="NotePadMainWindow.ui">
       <Filter>NotePadApp</Filter>
+    </QtUic>
+    <QtUic Include="QDockWidgetDemo.ui">
+      <Filter>QDockWidget</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>

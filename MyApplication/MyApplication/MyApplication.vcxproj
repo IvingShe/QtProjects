@@ -132,6 +132,7 @@
     <ClCompile Include="ParentObject.cpp" />
     <ClCompile Include="QCellWidget.cpp" />
     <ClCompile Include="QChildObjectWithoutParent.cpp" />
+    <ClCompile Include="QDockWidgetDemo.cpp" />
     <ClCompile Include="QFileDialogDemoWidget.cpp" />
     <ClCompile Include="QObjectTreeTestWidget.cpp" />
     <ClCompile Include="QtApplicationDemo.cpp" />
@@ -174,6 +175,7 @@
     <QtUic Include="NonModalWindowDemo.ui" />
     <QtUic Include="NotePadMainWindow.ui" />
     <QtUic Include="QCellWidget.ui" />
+    <QtUic Include="QDockWidgetDemo.ui" />
     <QtUic Include="QFileDialogDemoWidget.ui" />
     <QtUic Include="QObjectTreeTestWidget.ui" />
     <QtUic Include="QtMainWidget.ui" />
@@ -271,6 +273,7 @@
     <QtMoc Include="Threads\MyTimer.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="QDockWidgetDemo.h" />
     <QtMoc Include="NotePadMainWindow.h" />
     <QtMoc Include="QtApplicationDemo.h" />
     <QtMoc Include="SearchWindow.h" />

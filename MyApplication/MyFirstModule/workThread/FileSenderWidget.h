@@ -2,7 +2,6 @@
 
 #include <QWidget>
 #include "ui_FileSenderWidget.h"
-//#include "workerThread/SendProgressDlg.h"
 #include "SendProgressDlg.h"
 class FileSenderWidget : public QWidget
 {

@@ -52,12 +52,18 @@
     <ClCompile Include="workThread\SendProgressDlg.cpp">
       <Filter>workThread</Filter>
     </ClCompile>
+    <ClCompile Include="FileSenderThread.cpp">
+      <Filter>workThread</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="workThread\FileSenderWidget.h">
       <Filter>workThread</Filter>
     </QtMoc>
     <QtMoc Include="workThread\SendProgressDlg.h">
+      <Filter>workThread</Filter>
+    </QtMoc>
+    <QtMoc Include="FileSenderThread.h">
       <Filter>workThread</Filter>
     </QtMoc>
   </ItemGroup>

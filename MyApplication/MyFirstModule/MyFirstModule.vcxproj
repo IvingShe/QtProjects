@@ -85,6 +85,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileSenderThread.cpp" />
     <ClCompile Include="workThread\FileSenderWidget.cpp" />
     <ClCompile Include="workThread\SendProgressDlg.cpp" />
     <QtRcc Include="MyFirstModule.qrc" />
@@ -100,6 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="workThread\SendProgressDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="FileSenderThread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -28,5 +28,7 @@ void FileSenderWidget::onSelectFile()
 void FileSenderWidget::onSend()
 {
 	SendProgressDlg dlg;
+	QString fileName = ui.lineEdit->text();
+	dlg.startFileTransport(fileName);
 	dlg.exec();
 }

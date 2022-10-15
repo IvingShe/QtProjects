@@ -57,7 +57,7 @@ void MyItemDrawer::paint(QPainter *painter,
 	if (1) {
 		QRect dst = rect;
 		dst.setLeft(rect.left() + 40);
-		dst.setBottom(rect.top() + 20);
+		dst.setBottom(rect.top() + 50);
 		painter->drawText(dst, Qt::AlignLeft | Qt::AlignVCenter, phone);
 	}
 }
@@ -67,7 +67,7 @@ void MyItemDrawer::paint(QPainter *painter,
 	 //获取QStyledItemDelegate默认的size
 	 QSize size = QStyledItemDelegate::sizeHint(option, index); 
 	 //将高度设置为50px
-	 size.setHeight(80); 
+	 size.setHeight(150); 
 	 return size;
 }
 MyItemDrawer::~MyItemDrawer()

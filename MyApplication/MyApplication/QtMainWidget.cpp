@@ -8,28 +8,29 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	/***********************************************************/
-	//left part:	
+
+	/*******UI left part:	*****************/
+	//simple QWidget demo
 	connect(ui.btnFirstWidgetByManal, SIGNAL(clicked()), this, SLOT(onSlotFirstWidgetDemo()));
 	connect(ui.btnFirstLayoutByManal, SIGNAL(clicked()), this, SLOT(onSlotFirstLayoutDemo()));
-
 	connect(ui.btnAddWidgetByCode, SIGNAL(clicked()), this, SLOT(onSlotAddWidgetByCode()));
 	connect(ui.mpToolButton, SIGNAL(clicked()), this, SLOT(onSlotHelp())); 
-	connect(ui.mpBtnLabel, SIGNAL(clicked()), this, SLOT(onSlotQLabel()));
+	connect(ui.mpBtnLabel, SIGNAL(clicked()), this, SLOT(onSlotQLabel()));	
+	connect(ui.btnComboBox, SIGNAL(clicked()), this, SLOT(onSlotQComboBox()));
+
+	//QtWidgetContainer demo
 	connect(ui.btnQTabWidget, SIGNAL(clicked()), this, SLOT(onSlotQTabWidget()));	
 	connect(ui.btnQTabManual, SIGNAL(clicked()), this, SLOT(onSlotQTabWidgetManual()));
 	connect(ui.btnQStackWidget, SIGNAL(clicked()), this, SLOT(onSlotQStackedWidget()));
 	connect(ui.mpBtnListWidget, SIGNAL(clicked()), this, SLOT(onSlotQListWidget()));
-	//
-	connect(ui.btnComboBox, SIGNAL(clicked()), this, SLOT(onSlotQComboBox()));
+
 
 	connect(ui.btnQListWidgetByModelView, SIGNAL(clicked()), this, SLOT(onSlotQListWidgetByModelView()));	
 	connect(ui.btnQListWidgetByDelegate, SIGNAL(clicked()), this, SLOT(onSlotQListWidgetMVViaDelegate()));
 
 	bool succes =connect(ui.btnModelView, SIGNAL(clicked()), this, SLOT(onSlotModelView()));
 
-	/***********************************************************/
-	//the middle  part: QListWidget
+	/****UI the middle  part: QListWidget********************/	
 	QListWidgetItem* item = new QListWidgetItem(u8"自定义Widget:黑色的圆");
 	item->setData(Qt::UserRole, 1); 
 	ui.listWidget->addItem(item);
@@ -60,7 +61,6 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	item->setData(Qt::DisplayRole, u8"自定义Widget:使用鼠标事件");
 	item->setData(Qt::UserRole, 7);
 	ui.listWidget->addItem(item);
-
 
 	item = new QListWidgetItem();
 	item->setData(Qt::DisplayRole, u8"使用原位编辑");
@@ -352,4 +352,3 @@ void QtMainWidget::onSlotQListWidgetMVViaDelegate() {
 	 mMyQListWidgetMVViaDelegate->show();
 }
 
-/****************/

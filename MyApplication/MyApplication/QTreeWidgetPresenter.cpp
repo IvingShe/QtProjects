@@ -21,8 +21,12 @@ void QTreeWidgetPresenter::init()
 	QString listLabel = u8"QListView的使用";
 	addChildItem(topItem, listLabel,1);
 
+	// it doesn't work.
    //bool flag = connect(m_pTreeWidget,SIGNAL(itemClicked(QTreeWidgetItem *item, int column)),this,SLOT(onItemDoubleClicked(QTreeWidgetItem *item, int column)));
-   bool flag = connect(m_pTreeWidget, &QTreeWidget::itemDoubleClicked, this, &QTreeWidgetPresenter::onItemDoubleClicked);
+	//it works 
+	bool flag = connect(m_pTreeWidget, SIGNAL(itemClicked(QTreeWidgetItem *, int )), this, SLOT(onItemDoubleClicked(QTreeWidgetItem *, int )));
+	//it works
+   //bool flag = connect(m_pTreeWidget, &QTreeWidget::itemDoubleClicked, this, &QTreeWidgetPresenter::onItemDoubleClicked);  
 
    //子节点全展开
    m_pTreeWidget->setItemsExpandable(true);
@@ -60,7 +64,7 @@ void  QTreeWidgetPresenter::addChildItem(QTreeWidgetItem *parentItem, QString& n
 
 void QTreeWidgetPresenter::onItemDoubleClicked(QTreeWidgetItem *item, int column)
 {
-	qDebug() << "";
+	qDebug() << "#onItemDoubleClicked#";
 
 	int dataRole = item->data(0, Qt::UserRole + 1).toInt();
 	int parentRole = dataRole / 10;

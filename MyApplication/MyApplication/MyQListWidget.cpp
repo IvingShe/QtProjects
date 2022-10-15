@@ -7,8 +7,11 @@ MyQListWidget::MyQListWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	QIcon icon(":/image/image/book.png");
+	//内容说明
+	QString description = u8"QListWidget的简单使用：a.增加带有图标（QIcon）的文字的Item; b.QListWidget切换模式；c.删除Item等";
+	ui.labelDescription->setText(description);
 
+	QIcon icon(":/image/image/book.png");
 	QListWidgetItem* item = new QListWidgetItem(icon, u8"书籍");
 	//增加Data
 	item->setData(Qt::UserRole, 0); 

@@ -9,8 +9,7 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 {
 	ui.setupUi(this);
 	/***********************************************************/
-	//left part:
-	
+	//left part:	
 	connect(ui.btnFirstWidgetByManal, SIGNAL(clicked()), this, SLOT(onSlotFirstWidgetDemo()));
 	connect(ui.btnFirstLayoutByManal, SIGNAL(clicked()), this, SLOT(onSlotFirstLayoutDemo()));
 
@@ -30,8 +29,7 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	bool succes =connect(ui.btnModelView, SIGNAL(clicked()), this, SLOT(onSlotModelView()));
 
 	/***********************************************************/
-	//right part: QListWidget
-
+	//the middle  part: QListWidget
 	QListWidgetItem* item = new QListWidgetItem(u8"自定义Widget:黑色的圆");
 	item->setData(Qt::UserRole, 1); 
 	ui.listWidget->addItem(item);
@@ -115,6 +113,10 @@ QtMainWidget::QtMainWidget(QWidget *parent)
 	addQListWidgetItem(u8"可停靠窗口演示：QDockWidget", 24);
 
 	connect(ui.listWidget, SIGNAL(itemClicked(QListWidgetItem *)), this, SLOT(onSlotItemClick(QListWidgetItem *)));
+
+	/**********the right part**********/
+	mTreeWidgetPresenter = new QTreeWidgetPresenter(this, ui.treeWidget);
+
 }
 
 void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
@@ -186,7 +188,6 @@ void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
 		break;
 		//QListWidget QTreeWidget QTableWidget
 		//QListWigdetItem QTreeWidgetItem  QTableWidgetItem;
-
 	case 16:
 		mpFileSenderWidget = new FileSenderWidget();
 		mpFileSenderWidget->show();
@@ -204,10 +205,7 @@ void QtMainWidget::onSlotItemClick(QListWidgetItem *item)
 
 		mpLoginDialog = new LoginDialog(this);
 		//mpLoginDialog->show();//非模态Non-modal;
-
-
 		resultCode = mpLoginDialog->exec();//modal dialog,程序阻塞；
-
 		if (resultCode == QDialog::Accepted)
 		{//用户点击登录，取得用户的输入；
 			qDebug() << "QDialog::Accepted";
@@ -269,6 +267,12 @@ QtMainWidget::~QtMainWidget()
 		pQObjectTreeTestWidget = Q_NULLPTR;
 	}
 
+	if (mTreeWidgetPresenter)
+	{
+	   delete mTreeWidgetPresenter;
+	   mTreeWidgetPresenter = Q_NULLPTR;
+	}
+
 }
 void QtMainWidget::onSlotFirstWidgetDemo()
 {
@@ -306,8 +310,6 @@ void QtMainWidget::onSlotQComboBox() {
 	mMyQCombobox = new MyQCombobox(NULL);
 	mMyQCombobox->show();
 }
-
-
 
 void QtMainWidget::onSlotQListWidget() 
 {
@@ -349,3 +351,5 @@ void QtMainWidget::onSlotQListWidgetMVViaDelegate() {
 	 mMyQListWidgetMVViaDelegate = new MyQListWidgetMVViaDelegate(NULL);
 	 mMyQListWidgetMVViaDelegate->show();
 }
+
+/****************/

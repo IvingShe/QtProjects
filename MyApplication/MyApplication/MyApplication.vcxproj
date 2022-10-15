@@ -137,6 +137,7 @@
     <ClCompile Include="QObjectTreeTestWidget.cpp" />
     <ClCompile Include="QtApplicationDemo.cpp" />
     <ClCompile Include="QtMainWidget.cpp" />
+    <ClCompile Include="QTreeWidgetPresenter.cpp" />
     <ClCompile Include="QtWidgetsWithMouse.cpp" />
     <ClCompile Include="QVLayoutDemoWidget.cpp" />
     <ClCompile Include="SearchWindow.cpp" />
@@ -273,6 +274,7 @@
     <QtMoc Include="Threads\MyTimer.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="QTreeWidgetPresenter.h" />
     <QtMoc Include="QDockWidgetDemo.h" />
     <QtMoc Include="NotePadMainWindow.h" />
     <QtMoc Include="QtApplicationDemo.h" />

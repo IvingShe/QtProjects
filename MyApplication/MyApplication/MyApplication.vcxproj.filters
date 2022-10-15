@@ -265,6 +265,9 @@
     <ClCompile Include="QDockWidgetDemo.cpp">
       <Filter>QDockWidget</Filter>
     </ClCompile>
+    <ClCompile Include="QTreeWidgetPresenter.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtMainWidget.h">
@@ -395,6 +398,9 @@
     </QtMoc>
     <QtMoc Include="QDockWidgetDemo.h">
       <Filter>QDockWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="QTreeWidgetPresenter.h">
+      <Filter>Main</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>

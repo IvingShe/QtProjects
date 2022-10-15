@@ -45,6 +45,8 @@
 
 #include "QObjectTreeTestWidget.h"
 
+#include "QTreeWidgetPresenter.h"
+
 class QtMainWidget : public QWidget
 {
 	Q_OBJECT
@@ -119,4 +121,7 @@ private:
 	MyMainWindowDemo* mpMyMainWindowDemo = Q_NULLPTR;
 	NotePadMainWindow* mpNotePadMainWindow = Q_NULLPTR;
 	QDockWidgetDemo* myQDockWidgetDemo = NULL;
+
+	//QTreeWidget²¿·Ö
+	QTreeWidgetPresenter* mTreeWidgetPresenter = Q_NULLPTR;
 };

@@ -20,7 +20,7 @@ void QTreeWidgetPresenter::init()
 
 	QString listLabel = u8"QListView的简单使用:QStringListModel VS QStandardItemModel";
 	addChildItem(topItem, listLabel,1);
-	listLabel = u8"QListView的使用";
+	listLabel = u8"QListView的使用：自定义QAbstractItemModel";
 	addChildItem(topItem, listLabel, 2);
 	// it doesn't work.
    //bool flag = connect(m_pTreeWidget,SIGNAL(itemClicked(QTreeWidgetItem *item, int column)),this,SLOT(onItemDoubleClicked(QTreeWidgetItem *item, int column)));

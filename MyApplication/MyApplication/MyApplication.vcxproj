@@ -102,6 +102,7 @@
     <ClCompile Include="CharsetDemoWidget.cpp" />
     <ClCompile Include="ChildObjectWithParentCotext.cpp" />
     <ClCompile Include="ComplexCustomWidget.cpp" />
+    <ClCompile Include="FirstCustomListModel.cpp" />
     <ClCompile Include="GBK.cpp" />
     <ClCompile Include="LoginDialog.cpp" />
     <ClCompile Include="MyCircle.cpp" />
@@ -134,6 +135,8 @@
     <ClCompile Include="QChildObjectWithoutParent.cpp" />
     <ClCompile Include="QDockWidgetDemo.cpp" />
     <ClCompile Include="QFileDialogDemoWidget.cpp" />
+    <ClCompile Include="QListViewByStringListModelAndStandardItemModel.cpp" />
+    <ClCompile Include="QListViewDemo.cpp" />
     <ClCompile Include="QObjectTreeTestWidget.cpp" />
     <ClCompile Include="QtApplicationDemo.cpp" />
     <ClCompile Include="QtMainWidget.cpp" />
@@ -178,6 +181,8 @@
     <QtUic Include="QCellWidget.ui" />
     <QtUic Include="QDockWidgetDemo.ui" />
     <QtUic Include="QFileDialogDemoWidget.ui" />
+    <QtUic Include="QListViewByStringListModelAndStandardItemModel.ui" />
+    <QtUic Include="QListViewDemo.ui" />
     <QtUic Include="QObjectTreeTestWidget.ui" />
     <QtUic Include="QtMainWidget.ui" />
     <QtUic Include="QtWidgetsWithMouse.ui" />
@@ -274,6 +279,8 @@
     <QtMoc Include="Threads\MyTimer.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="QListViewByStringListModelAndStandardItemModel.h" />
+    <QtMoc Include="QListViewDemo.h" />
     <QtMoc Include="QTreeWidgetPresenter.h" />
     <QtMoc Include="QDockWidgetDemo.h" />
     <QtMoc Include="NotePadMainWindow.h" />
@@ -289,6 +296,7 @@
     <QtMoc Include="ChildObjectWithParentCotext.h" />
     <QtMoc Include="LoginDialog.h" />
     <QtMoc Include="MyMainWindowDemo.h" />
+    <QtMoc Include="FirstCustomListModel.h" />
     <ClInclude Include="MyNameSpace.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

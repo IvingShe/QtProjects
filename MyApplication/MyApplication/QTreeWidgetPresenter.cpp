@@ -18,9 +18,10 @@ void QTreeWidgetPresenter::init()
 	QString mvcLabel = u8"MVC 框架使用示例";
 	QTreeWidgetItem* topItem =addTopItem(mvcLabel, TopItemType::MVC);
 
-	QString listLabel = u8"QListView的使用";
+	QString listLabel = u8"QListView的简单使用:QStringListModel VS QStandardItemModel";
 	addChildItem(topItem, listLabel,1);
-
+	listLabel = u8"QListView的使用";
+	addChildItem(topItem, listLabel, 2);
 	// it doesn't work.
    //bool flag = connect(m_pTreeWidget,SIGNAL(itemClicked(QTreeWidgetItem *item, int column)),this,SLOT(onItemDoubleClicked(QTreeWidgetItem *item, int column)));
 	//it works 
@@ -62,6 +63,7 @@ void  QTreeWidgetPresenter::addChildItem(QTreeWidgetItem *parentItem, QString& n
 	parentItem->addChild(child);
 }
 
+
 void QTreeWidgetPresenter::onItemDoubleClicked(QTreeWidgetItem *item, int column)
 {
 	qDebug() << "#onItemDoubleClicked#";
@@ -73,11 +75,28 @@ void QTreeWidgetPresenter::onItemDoubleClicked(QTreeWidgetItem *item, int column
 	switch (parentRole)
 	{
 	case  TopItemType::MVC:
-
 		qDebug() << "";
+		handleMVCClicked(childRole);
 		break;
 	default:
 		break;
 	}
 
+}
+
+//处理MVC的响应函数
+void QTreeWidgetPresenter::handleMVCClicked(int type)
+{
+	switch (type)
+	{
+	case 1:
+	     m_pListViewSimple = new QListViewByStringListModelAndStandardItemModel(Q_NULLPTR);
+		 m_pListViewSimple->show();
+		break;
+	case 2:
+		m_pListViewDemo = new QListViewDemo(nullptr);
+		m_pListViewDemo->show();
+	default:
+		break;
+	}
 }

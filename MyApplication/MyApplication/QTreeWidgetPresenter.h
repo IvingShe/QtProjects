@@ -2,6 +2,10 @@
 
 #include <QObject>
 #include<QTreeWidget>
+
+#include "QListViewDemo.h"
+#include "QListViewByStringListModelAndStandardItemModel.h"
+
 /**
 *QTreeWidget的逻辑处理类
 */
@@ -30,10 +34,15 @@ private:
 	//增加子Item
 	void  addChildItem(QTreeWidgetItem *parentItem, QString& name, int dataRole);
 
+	//处理MVC的响应函数
+	void handleMVCClicked(int type);
+
 private slots:
 	//Item双击响应函数
 	void onItemDoubleClicked(QTreeWidgetItem *item, int column);
 
 private:
 	QTreeWidget*  m_pTreeWidget = nullptr;
+	QListViewDemo* m_pListViewDemo = nullptr;
+	QListViewByStringListModelAndStandardItemModel* m_pListViewSimple = Q_NULLPTR;
 };

@@ -314,7 +314,7 @@ void QtMainWidget::onSlotQComboBox() {
 void QtMainWidget::onSlotQListWidget() 
 {
 	mMyQListWidget = new MyQListWidget(NULL);
-	mMyQListWidget->show();
+
 }
 
 void  QtMainWidget::onSlotQStackedWidget() {

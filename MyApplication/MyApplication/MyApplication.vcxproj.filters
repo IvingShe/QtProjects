@@ -117,6 +117,9 @@
     <Filter Include="QDockWidget">
       <UniqueIdentifier>{e9df640c-d4f4-4deb-8207-d82ada9692b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="QListViewDemo">
+      <UniqueIdentifier>{1b29180b-752e-4477-ad29-cc444f5dc198}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MyApplication.qrc">
@@ -268,6 +271,15 @@
     <ClCompile Include="QTreeWidgetPresenter.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="QListViewDemo.cpp">
+      <Filter>QListViewDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstCustomListModel.cpp">
+      <Filter>QListViewDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="QListViewByStringListModelAndStandardItemModel.cpp">
+      <Filter>QListViewDemo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtMainWidget.h">
@@ -402,6 +414,15 @@
     <QtMoc Include="QTreeWidgetPresenter.h">
       <Filter>Main</Filter>
     </QtMoc>
+    <QtMoc Include="QListViewDemo.h">
+      <Filter>QListViewDemo</Filter>
+    </QtMoc>
+    <QtMoc Include="FirstCustomListModel.h">
+      <Filter>QListViewDemo</Filter>
+    </QtMoc>
+    <QtMoc Include="QListViewByStringListModelAndStandardItemModel.h">
+      <Filter>QListViewDemo</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="QtMainWidget.ui">
@@ -514,6 +535,12 @@
     </QtUic>
     <QtUic Include="QDockWidgetDemo.ui">
       <Filter>QDockWidget</Filter>
+    </QtUic>
+    <QtUic Include="QListViewDemo.ui">
+      <Filter>QListViewDemo</Filter>
+    </QtUic>
+    <QtUic Include="QListViewByStringListModelAndStandardItemModel.ui">
+      <Filter>QListViewDemo</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
